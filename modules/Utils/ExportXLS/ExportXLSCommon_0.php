@@ -1,8 +1,8 @@
 <?php
 /**
- * @author Arkadiusz Bisaga <abisaga@telaxus.com>
- * @copyright Copyright &copy; 2008, Telaxus LLC
- * @version 1.0
+ * @author Arkadiusz Bisaga, Janusz Tylek
+ * @copyright Copyright &copy; 2008, Janusz Tylek
+ * @version 1.9.0
  * @license MIT
  * @package epesi-libs
  * @subpackage exportxls

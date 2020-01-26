@@ -1,10 +1,10 @@
 <?php
 /**
- * @author Arkadiusz Bisaga <abisaga@telaxus.com>
- *         Adam Bukowski <abukowski@telaxus.com>
- * @copyright Copyright &copy; 2008, 2014 Telaxus LLC
+ * @author Arkadiusz Bisaga, Janusz Tylek
+ *          Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2008, 2014 Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-utils
  * @subpackage RecordBrowser
  */

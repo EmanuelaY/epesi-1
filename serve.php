@@ -1,9 +1,9 @@
 <?php
 /**
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2006, Telaxus LLC
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2006-2020 Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-base
  *
  * This script will serve a single js/css file in this directory. Here we place

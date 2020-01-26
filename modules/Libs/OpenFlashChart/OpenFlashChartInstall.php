@@ -6,9 +6,9 @@
  * Copyright (C) 2007 John Glazebrook
  * distributed under the terms of the GNU General Public License version 2 or later
  *
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2006, Telaxus LLC
- * @version 1.0
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2006-2020 Janusz Tylek
+ * @version 1.9.0
  * @license MIT
  * @package epesi-libs
  * @subpackage openflashchart
@@ -36,7 +36,7 @@ class Libs_OpenFlashChartInstall extends ModuleInstall {
 	public static function info() {
 		return array(
 			'Description'=>'Flash Charts',
-			'Author'=>'pbukowski@telaxus.com',
+			'Author'=>'j@epe.si',
 			'License'=>'MIT');
 	}
 	

@@ -2,17 +2,17 @@
 /**
  * Lang_Administrator class.
  * 
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2008, Telaxus LLC
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2008, Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-base
  * @subpackage lang-administrator
  */
 defined("_VALID_ACCESS") || die('Direct access forbidden');
 
 class Base_Lang_AdministratorCommon extends Base_AdminModuleCommon {
-	const translation_server_url = 'http://translate.epesibim.com';
+	const translation_server_url = 'http://translate.epe.si';
 
 	public static function admin_caption() {
 		return array('label'=>__('Language & Translations'), 'section'=>__('Regional Settings'));

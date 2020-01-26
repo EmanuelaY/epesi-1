@@ -64,20 +64,26 @@ class SimpleLayout {
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <title><?php $xx = $this->title ? $this->title . ' - ' : ''; print $xx; ?>EPESI Administrator's Tools</title>
+                <title><?php $xx = $this->title ? $this->title . ' - ' : ''; print $xx; ?>Epesi Admin Utilities</title>
+				<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Titillium+Web:400,700&display=swap" rel="stylesheet">
                 <link href="./images/admintools.css" rel="stylesheet" type="text/css" />
 
             </head>
 
             <body>
-                <table id="banner" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td class="image">&nbsp;</td>
-                        <td class="header">&nbsp;&nbsp;Administrator's Tools&nbsp;</td>
-                    </tr>
-                </table>
-                <br/>
-                <center>
+           
+                <div class="banner" id="banner">
+                        <div class="header">ADMIN UTILITIES</div>
+                 </div>
+                 
+                 <div class="links">
+                 <?php if ($this->show_action_links){
+                     print($this->format_action_links());
+                    }
+                 ?> 
+                 </div>
+
+                 
     <?php }
 
     function startframe() { ?>
@@ -92,20 +98,15 @@ class SimpleLayout {
     <?php }
 
     function pagefooter() {
-        print '<br/><center>';
-        if ($this->show_action_links)
-            print('<div class="title">' . $this->format_action_links() . '</div>');
         ?>
-                    <hr/>
-                    <p><a href="http://www.epesi.org"><img src="./images/epesi-powered.png" border="0" alt="EPESI powered"/></a></p>
-                    <span class="footer">Copyright &copy; 2014 &bull; <a href="http://www.epesi.org/">EPESI framework</a> &bull; Application developed by <a href="http://www.telaxus.com">Telaxus LLC</a></span>
-                    <br/>
-                </center>
 
+		<div class="footer" id="footer">
+			<div><a href="https://epe.si"><img src="images/epesi-powered.png" border="0"></a></div>
+			<div>Copyright &copy; 2006-<?php echo date('Y'); ?> by Janusz Tylek</div>
+		    <div class="support">Support: <a href="https://epesi.org">https://epesi.org</a></div>
+		</div>
             </body>
-
         </html>
     <?php }
-
 }
 ?>

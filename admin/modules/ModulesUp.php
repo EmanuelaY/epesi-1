@@ -22,7 +22,8 @@ class ModulesUp extends SteppedAdminModule {
     }
 
     public function success_text() {
-        return '<center><strong>Load priority array was successfully updated.</strong></center>';
+        $text = '<center><strong>Load priority array was successfully updated.</strong></center>';
+        return $text;
     }
 
     public function failure_text() {

@@ -1,7 +1,7 @@
 <?php
 /**
- * @author Paul Bukowski <shacky7@gmail.com>
- * @version 1.0
+ * @author Janusz Tylek <j@epe.si>
+ * @version 1.9.0
  * @license MIT
  * @package epesi-base
  */

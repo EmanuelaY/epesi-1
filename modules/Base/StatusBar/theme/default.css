@@ -2,7 +2,6 @@
 	background: white;
 	height: 100%;
 	padding: 5px;
-	border-radius: 10px;
 }
 
 .Base_StatusBar img {
@@ -27,37 +26,32 @@
 .Base_StatusBar div.layer {
   	position: fixed;
     padding: 10px;
-	width: 210px;
+	width: 300px;
 	left: 50%;
 	top: 30%;
 	margin-left: -110px;
 }
 
 .Base_StatusBar .message {
-	width: 140px;
-	min-height: 20px;
-	line-height: 20px;
-	padding: 25px 0 25px 60px;
-
-    font-family: Tahoma, Verdana, Vera-Sans, DejaVu-Sans;
+	font-family: 'Exo 2', sans-serif;
+	font-style: bold;
+	font-weight: 400;
 	font-size: 14px;
-	font-weight: bold;
-	color: #336699;
-	
-	text-shadow: 1px 1px 2px #bbb;
-	
+	color: #043d5f;
+	width: 200px;
+	min-height: 40px;
+	line-height: 40px;
+	padding: 25px 0 25px 60px;	
 	background-repeat: no-repeat;
 	background-position: 15px 50%;
-
-	border-radius: 6px;
-	
-	box-shadow: inset 2px 2px 4px #777;
-}
+	}
 
 .Base_StatusBar .message .message {
-	margin-left: -60px;
+	margin-left: -25px;
 	margin-top: -25px;
 	margin-bottom: -25px;
+	width: 250px;
+	padding-left: 0;
 }
 
 .Base_StatusBar .loading.message {
@@ -67,28 +61,21 @@
 .Base_StatusBar .normal.message {
 	background-image: none;
 	background-color: #EEEEFF;
-    padding-left: 0;
-    width: 200px;
 }
 .Base_StatusBar .warning.message {
 	background-image: none;
 	background-color: #FFEE66;
 	color: #000000;
-    padding-left: 0;
-    width: 200px;
 }
 .Base_StatusBar .error.message {
 	background-image: none;
 	background-color: #BB0000;
     color: #FFFFFF;
-    padding-left: 0;
-    width: 200px;
 }
 .Base_StatusBar #dismiss {
     color: #AAAAAA;
     position: relative;
     font-size: 80%;
     margin: 0;
-    padding: 0;
     top: 2px;
 }

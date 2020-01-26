@@ -3,10 +3,10 @@
  * Module file
  *
  * This file defines abstract class Module whose provides basic modules functionality.
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2006, Telaxus LLC
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2006-2020 Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-base
  */
 defined("_VALID_ACCESS") || die('Direct access forbidden');

@@ -1,9 +1,9 @@
 <?php
 /**
- * @author Arkadiusz Bisaga <abisaga@telaxus.com>
- * @copyright Copyright &copy; 2008, Telaxus LLC
+ * @author Arkadiusz Bisaga, Janusz Tylek
+ * @copyright Copyright &copy; 2008, Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-utils
  * @subpackage RecordBrowser-RecordPicker
  */
@@ -30,7 +30,7 @@ class Utils_RecordBrowser_RecordPickerInstall extends ModuleInstall {
 	public static function info() {
 		return array(
 			'Description'=>'',
-			'Author'=>'<a href="mailto:abisaga@telaxus.com">Arkadiusz Bisaga</a> (<a href="http://www.telaxus.com">Telaxus LLC</a>)',
+			'Author'=>'<a href="mailto:j@epe.si">Arkadiusz Bisaga</a> (<a href="https://epe.si">Janusz Tylek</a>)',
 			'License'=>'TL');
 	}
 	

@@ -3,9 +3,9 @@
 /**
  * Submodule to upload files
  *
- * @author Adam Bukowski <abukowski@telaxus.com>
- * @copyright Copyright &copy; 2016, Telaxus LLC
- * @version 1.0
+ * @author  Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2016, Janusz Tylek
+ * @version 1.9.0
  * @license MIT
  * @package epesi-utils
  * @subpackage file-uploader

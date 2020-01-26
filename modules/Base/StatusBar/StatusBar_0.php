@@ -2,10 +2,10 @@
 /**
  * Fancy statusbar.
  *
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2008, Telaxus LLC
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2008, Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-base
  * @subpackage statusbar
  */
@@ -17,7 +17,8 @@ class Base_StatusBar extends Module {
 		$theme = $this->init_module("Base/Theme");
 		$theme->assign('statusbar_id','Base_StatusBar');
 		$theme->assign('text_id','statusbar_text');
-        $theme->assign('close_text', __('Click anywhere to dismiss'));
+		$theme->assign('close_text', __('Click anywhere to dismiss'));
+		$theme->assign('status_message', __('Processing. Please wait...'));
 		$theme->display();
 		$this->load_js();
 		on_exit(array($this, 'messages'),null,false);

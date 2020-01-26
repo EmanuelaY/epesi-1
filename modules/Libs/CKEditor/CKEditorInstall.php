@@ -5,9 +5,9 @@
  * CKeditor - The text editor for Internet - http://www.Ckeditor.net
  * Copyright (C) 2003-2007 Frederico Caldeira Knabben
  *
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2007, Telaxus LLC
- * @version 1.0
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2006-2020 Janusz Tylek
+ * @version 1.9.0
  * @license MIT
  * @package epesi-libs
  * @subpackage Ckeditor

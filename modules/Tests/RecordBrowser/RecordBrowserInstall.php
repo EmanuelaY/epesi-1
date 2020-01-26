@@ -1,8 +1,8 @@
 <?php
 /**
- * @author Olga Chlebus <ochlebus@telaxus.com>
- * @copyright Copyright &copy; 2013, Telaxus LLC
- * @version 1.0
+ * @author  Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2013, Janusz Tylek
+ * @version 1.9.0
  * @license MIT
  * @package epesi-tests
  * @subpackage record-browser

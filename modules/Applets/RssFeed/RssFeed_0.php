@@ -1,10 +1,10 @@
 <?php
 /**
  * Simple RSS Feed applet
- * @author jtylek@telaxus.com
- * @copyright 2008 Telaxus LLC
+ * @author j@epe.si
+ * @copyright 2008 Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-applets
  * @subpackage rssfeed
  */

@@ -1,215 +1,175 @@
-.css3_content_shadow {
-	/* css3 shadow border*/
-	-webkit-box-shadow: 1px 1px 5px black;
-	-moz-box-shadow: 1px 1px 5px black;
-	box-shadow: 1px 1px 5px black;
-	/* end css3 shadow border*/
-	
-	/* border radius */
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	/* end border radius */
-}
-
-table#Base_User_Login {
-	border: 1px solid #FFFFFF;
-	font-size: 11px;
-	background-color: #E0E0E0;
-	/* border radius */
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	/* end border radius */
-}
-
-table#Base_User_Login .gradient {
-	background-color: #ffffff;
-	/* login css3 gray gradient */
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* W3C */
-	/* end login css3 gray gradient */
-}
-
-table#Base_User_Login td.title {
-	color: #336699;
-	font-size: 20px;
+#Base_User_Login .main_content {
+	margin-top: 10px;
+	padding: 10px;
+	font-family: 'Exo 2', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
 	text-align: center;
-	height: 35px;
+	align-items: center;
+	display: block;
+	align: center;
 }
 
-table#Base_User_Login td.title span {
+#Base_Box__login {
+	color: #0A3C5C;
+	font-size: 18px;
+	width: 95%;
+	text-align: center;
+	align-items: center;
+	background-color: #DADADA;
+	vertical-align: bottom;
+}
+
+#Base_User_Login .title {
+	background-color: #0A3C5C;
+	color: #DADADA;;
+	font-size: 22px;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	width: 300px;
+}
+
+#Base_User_Login .title span {
 	vertical-align: super;
-	font-size: 9px;
 }
 
-table#Base_User_Login a {
+#Base_User_Login a {
 	color: #777777;
-	font-size: 11px;
 }
 
-table#Base_User_Login span.error {
+#Base_User_Login span.error {
 	color: red;
-	font-size: 11px;
-}
-
-table#Base_User_Login td.error {
-	text-align: center;
-	height: 20px;
-}
-
-table#Base_User_Login td.input input {
-	color: #000000;
-	border: 1px solid #B3B3B3;
-	width: 160px;
-	padding: 2px 7px;
-	/* border radius */
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	/* end border radius */
 	
-	/* css3 shadow border*/
-	-webkit-box-shadow: 1px 1px 2px black;
-	-moz-box-shadow: 1px 1px 2px black;
-	box-shadow: 1px 1px 2px black;
-	/* end css3 shadow border*/
+
+#Base_User_Login .error {
+	text-align: center;
+	height: 30px;
 }
 
-table#Base_User_Login td.input input:focus {
+#Base_User_Login .input input {
+	color: #0A3C5C;
+	border: 1px solid #B3B3B3;
+	width: 150px;
+	padding: 2px 10px 2px 2px;
+}
+
+#Base_User_Login .input input:focus {
+	border: 2px solid #0A3C5C;
 	background-color: #FFFFA5;
 }
 
-table#Base_User_Login td.submit_button input {
-	font-size: 11px;
+#Base_User_Login .button {
+	width: 200px;
+}
+
+#Base_User_Login .login {
+	width: 250px;
+}
+
+#Base_User_Login .submit_button input {
 	color: #FFFFFF;
 	border: 0px;
-	width: 100px;
-	height: 25px;
+	width: 200px;
+	height: 30px;
 	vertical-align: middle;
 	cursor: pointer;
-	
-	/* border radius */
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	/* end border radius */
-	
-	/* css3 shadow border*/
-	-webkit-box-shadow: 1px 1px 2px black;
-	-moz-box-shadow: 1px 1px 2px black;
-	box-shadow: 1px 1px 2px black;
-	/* end css3 shadow border*/
-
-	/*dark css3 green background image gradient */
-	background: #226622; /* Old browsers */
-	background: -moz-linear-gradient(top, #709c70 0%, #4d844d 49%, #226622 51%, #649464 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#709c70), color-stop(49%,#4d844d), color-stop(51%,#226622), color-stop(100%,#649464)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35b135', endColorstr='#2d602d',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* W3C */
-	/* end dark css3 green background gradient */
+	background: #226622;
 }
 
-table#Base_User_Login input.submit:hover {
-	/*light css3 green background gradient */
-	background: #226622; /* Old browsers */
-	background: -moz-linear-gradient(top, #226622 0%, #71b871 1%, #58ab58 49%, #379b37 51%, #63b163 95%, #226622 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#226622), color-stop(1%,#71b871), color-stop(49%,#58ab58), color-stop(51%,#379b37), color-stop(95%,#63b163), color-stop(100%,#226622)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ada5a', endColorstr='#2d602d',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* W3C */
-	/* end light css3 green background gradient */
-}
-
-table#Base_User_Login td.label {
-	font-weight: normal;
-	width: 225px;
-	height: 30px;
-	font-size: 11px;
-	color: #000000;
-	text-align: right;
-}
-
-table#Base_User_Login td.input {
-	font-weight: normal;
-	width: 325px;
-	height: 30px;
-	text-align: left;
-}
-
-.epesi_rtl table#Base_User_Login td.label {
-	text-align: left;
-}
-
-.epesi_rtl table#Base_User_Login td.input {
-	text-align: right;
-}
-
-table#Base_User_Login td.input input {
-	font-size: 11px;
-}
-
-table#Base_User_Login td.submit_button {
-	text-align: center;
+#Base_User_Login input.submit:hover {
+	color: #FFFFA5;
+	width: 210px;
 	height: 35px;
+	background: #226622;
 }
 
-table#Base_User_Login td.header_tail {
-	width: 550px;
-	height: 200px;
-	background-color: #FFFFFF;
+#Base_User_Login .label {
+	font-family: 'Exo 2', sans-serif;
+	font-style: bold;
+	font-weight: 400;
+	font-size: 14;
+	height: 30px;
+	text-align: right;
 }
 
-table#Base_User_Login td.footer {
-	color: #336699;
-	font-size: 11px;
+#Base_User_Login .input {
+	font-weight: normal;
+	width: 200px;
+	height: 30px;
+	text-align: left;
+}
+
+.epesi_rtl #Base_User_Login .label {
+	text-align: left;
+}
+
+.epesi_rtl #Base_User_Login .input {
+	text-align: right;
+}
+
+
+#Base_User_Login .submit_button {
 	text-align: center;
 	height: 40px;
-	vertical-align: top;
+	width: 200px;
 }
 
-table#Base_User_Login td.footer a {
+#header_tail {
+	width: 300px;
+	margin: 20px;
+}
+
+#Base_User_Login .footer {
+		background-color: #FFFFFF;
+		font-size: 14px;
+		color: #758f82;
+		padding-top: 30px;
+		text-align: center;
+		align-items: center;
+		display: grid;
+}
+
+
+#Base_User_Login .footer a {
 	font-weight: bold;
 	color: #336699;
 }
 
-table#Base_User_Login td.footer a:hover {
+#Base_User_Login .footer a:hover {
 	color: #993333;
 }
 
-table#Base_User_Login td.recover_password {
+#Base_User_Login .recover_password {
 	text-align: center;
 	color: #336699;
 	font-weight: bold;
 	height: 25px;
+	width: 250px;
 }
 
-table#Base_User_Login td.recover_password a {
+#Base_User_Login .recover_password a {
 	color: #777777;
+	font-size: 18px;
+	height: 50px;
+	width: 250px;
 }
 
-table#Base_User_Login td.recover_password a:hover {
-	color: #000000;
+#Base_User_Login .recover_password a:hover {
+	color: #226622;
+	font-size: 20px;
+	background-color: #E0E0E0;
 }
 
-table#Base_User_Login td.autologin {
+#Base_User_Login .autologin {
 	text-align: center;
-	height: 30px;
-	color: #777777;
+	height: 40px;
+	color: #226622;
+	background-color: #E0E0E0;
 }
 
-table#Base_User_Login td.donation_notice {
+#Base_User_Login .donation_notice {
 	text-align: center;
 	vertical-align: middle;
 	height: 30px; 
@@ -218,11 +178,11 @@ table#Base_User_Login td.donation_notice {
 	color: #888;
 }
 
-table#Base_User_Login td.donation_notice a {
+#Base_User_Login .donation_notice a {
 	color: #00F;
 }
 
-table#Base_User_Login td.donation_notice a:hover {
+#Base_User_Login .donation_notice a:hover {
 	color: #77F;
 	text-decoration: underline;
 }
@@ -238,49 +198,30 @@ table#Base_User_Login td.donation_notice a:hover {
 .logout_icon {
 	font-weight: normal;
     color: #FFFFFF;
-    width: 110px;
-    line-height: 21px;
-    height: 22px;
+    width: 150px;
+    line-height: 30px;
+    height: 30px;
     display: block;
     border: none;
     text-align: center;
     vertical-align: middle;
-	
-	/*dark css3 green background image gradient */
-	background: #226622; /* Old browsers */
-	background: -moz-linear-gradient(top, #709c70 0%, #4d844d 49%, #226622 51%, #649464 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#709c70), color-stop(49%,#4d844d), color-stop(51%,#226622), color-stop(100%,#649464)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35b135', endColorstr='#2d602d',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #709c70 0%,#4d844d 49%,#226622 51%,#649464 100%); /* W3C */
-	/* end dark css3 green background gradient */
+	background: #226622;
 }
 
 .logout_icon:hover,
 .logout_icon:focus{
 	color: white;
-	/*light css3 green background gradient */
-	background: #226622; /* Old browsers */
-	background: -moz-linear-gradient(top, #226622 0%, #71b871 1%, #58ab58 49%, #379b37 51%, #63b163 95%, #226622 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#226622), color-stop(1%,#71b871), color-stop(49%,#58ab58), color-stop(51%,#379b37), color-stop(95%,#63b163), color-stop(100%,#226622)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ada5a', endColorstr='#308630',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #226622 0%,#71b871 1%,#58ab58 49%,#379b37 51%,#63b163 95%,#226622 100%); /* W3C */
-	/* end light css3 green background gradient */
+	background: #226622;
 }
 
 .logged_as {
-	float: left;
-	width: 154px;
-    height: 21px;
+	float: right;
 	padding-top: 0px;
-	margin-right: 6px;
-	text-align: center;
-	line-height: 12px;
+	margin-left: 6px;
+	text-align: left;
+	line-height: 30px;
+	background-color: #226622;
+	color: #E0E0E0;
 }
 
 .epesi_rtl .logged_as {
@@ -288,21 +229,10 @@ table#Base_User_Login td.donation_notice a:hover {
 }
 
 .logout_css3_box {
-	/* border radius */
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	/* end border radius */
-	/* css3 shadow border*/
-	-webkit-box-shadow: 1px 1px 2px black;
-	-moz-box-shadow: 1px 1px 2px black;
-	box-shadow: 1px 1px 2px black;
-	/* end css3 shadow border*/
-
     display: block;
-    height: 21px;
+    height: 30px;
     overflow: hidden;
-    width: 108px;
+    width: 150px;
 	float: right;
 }
 
@@ -310,26 +240,12 @@ table#Base_User_Login td.donation_notice a:hover {
 	float: left;
 }
 
-#top_bar #top_bar_2 .login {
-	height: 26px;
-    padding-top: 1px;
-	vertical-align: top;
-	text-align: left;
-    padding-left: 4px;
-}
 
-.login .button {
-	width: 109px;
-}
-
-table#Base_User_Login .message {
+#Base_User_Login .message {
 	text-align: center;
-	line-height: 22px;
+	line-height: 30px;
 	font-size: 16px;
-	height: 135px;
 }
-table#Base_User_Login .message a {
-	text-align: center;
-	line-height: 22px;
-	font-size: 16px;
+#Base_User_Login .message a {
+	font-variant: small-caps;
 }

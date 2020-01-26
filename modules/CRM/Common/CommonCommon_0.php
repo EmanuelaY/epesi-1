@@ -2,10 +2,10 @@
 /**
  * CRM Common class.
  *
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2009, Telaxus LLC
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2009, Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-crm
  * @subpackage common
  */

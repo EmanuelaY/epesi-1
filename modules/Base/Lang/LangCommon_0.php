@@ -4,10 +4,10 @@
  *
  * This class provides translations manipulation.
  *
- * @author Paul Bukowski <pbukowski@telaxus.com>
- * @copyright Copyright &copy; 2008, Telaxus LLC
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2008, Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-base
  * @subpackage lang
  */
@@ -64,12 +64,12 @@ class Base_LangCommon extends ModuleCommon {
 	}
 	
 	public static function print_flag($code, $label, $href='') {
-		$file = 'modules/Base/Lang/theme/flag_'.$code.'.png';
+		$file = 'modules/Base/Lang/theme/flags/'.$code.'.svg';
 		if (!file_exists($file))
 			$file = 'modules/Base/Lang/theme/flag_placeholder.png';
-		print(	'<a '.$href.' class="flag_button">'.
-					'<img class="flag" src="'.$file.'" />'.
-					'<span class="label">'.$label.'</span>'.
+		print(	'<a '.$href.'>'.
+					'<img class="flag_button" src="'.$file.'" />'.
+					'<span class="flag_label">'.$label.'</span>'.
 				'</a>');
 	}
 

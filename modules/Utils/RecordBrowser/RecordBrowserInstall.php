@@ -2,10 +2,10 @@
 /**
  * RecordBrowser install class.
  *
- * @author Arkadiusz Bisaga <abisaga@telaxus.com>
- * @copyright Copyright &copy; 2008, Telaxus LLC
+ * @author Arkadiusz Bisaga, Janusz Tylek
+ * @copyright Copyright &copy; 2008, Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-utils
  * @subpackage RecordBrowser
  */
@@ -117,7 +117,7 @@ class Utils_RecordBrowserInstall extends ModuleInstall {
 	}
 	
 	public static function info() {
-		return array('Author'=>'<a href="mailto:abisaga@telaxus.com">Arkadiusz Bisaga</a> (<a href="http://www.telaxus.com">Telaxus LLC</a>)', 'License'=>'TL', 'Description'=>'Module to browse and modify records.');
+		return array('Author'=>'<a href="mailto:j@epe.si">Arkadiusz Bisaga</a> (<a href="https://epe.si">Janusz Tylek</a>)', 'License'=>'TL', 'Description'=>'Module to browse and modify records.');
 	}
 	
 	public function simple_setup() {

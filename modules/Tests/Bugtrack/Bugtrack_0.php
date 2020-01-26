@@ -2,10 +2,10 @@
 /**
  * Software Development - Bug Tracking
  *
- * @author Janusz Tylek <jtylek@telaxus.com>
- * @copyright Copyright &copy; 2008, Telaxus LLC
+ * @author Janusz Tylek <j@epe.si>
+ * @copyright Copyright &copy; 2008, Janusz Tylek
  * @license MIT
- * @version 1.0
+ * @version 1.9.0
  * @package epesi-tests
  * @subpackage bugtrack
  */

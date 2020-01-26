@@ -53,51 +53,27 @@ include "{$install_lang_dir}/{$install_lang_load}.php";
 // end translations load
 
 function set_header($str) {
-	print('<script type="text/javascript">document.getElementById("setup_page_header").innerHTML="'.$str.'";</script>');
-}
-
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-	  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-	  <title><?php echo __("EPESI setup"); ?></title>
-	  <link href="setup.css" type="text/css" rel="stylesheet"/>
-</head>
-<body>
-		<table id="banner" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td class="image">&nbsp;</td>
-				<td class="back" id="setup_page_header">&nbsp;</td>
-				<td class="image back">&nbsp;</td>
-			</tr>
-		</table>
-		<br>
-		<center>
-		<table id="main" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td>
-<?php
+		require_once('include/setup_header.inc');
+		print('<script type="text/javascript">document.getElementById("navbar_title").innerHTML="'.$str.'";</script>');
+		return;
+	}
 
 function footer() {
-?>
-				</td>
-			</tr>
-		</table>
-		</center>
-		<br>
-		<center>
-		<p><a href="http://www.epe.si"><img src="images/epesi-powered.png" border="0"></a></p>
-		<span class="footer">Copyright &copy; <?php echo date('Y'); ?> &bull; <a href="https://epe.si">Janusz Tylek</a></span>
-		</center>
-</body>
-</html>
-<?php
-}
+	require_once('include/setup_footer.inc');
+	return;
+	}
+
 register_shutdown_function('footer');
 
+
+// Start to build a page
+
+set_header('<H1>Setup Wizard</H1>');
+
 // language selection form
+
 if (!isset($install_lang_code)) {
+	print('<h2>Select Language</h2>');
 	$complete = Base_LangCommon::get_complete_languages();
 	$labels = Base_LangCommon::get_base_languages();
 	$list = array();
@@ -119,12 +95,13 @@ if (!isset($install_lang_code)) {
 	print('</div>');
 	print('<a class="show_incomplete button" onclick="this.style.display=\'none\';document.getElementById(\'incomplete_translations\').style.display=\'\';">Show incomplete translations</a>');
 	print('<div id="incomplete_translations" style="display:none;">');
+	print('<div class="flag"');
 	foreach ($rest as $l=>$label) {
 		Base_LangCommon::print_flag($l, $label, 'href="?install_lang='.$l.'"');
 	}
-	print('</div>');
+	print('</div></div>');
 	
-	set_header('Select Language');
+	
 	die();
 }
 
@@ -327,7 +304,7 @@ if(isset($_GET['htaccess']) && isset($_GET['license'])) {
 	}
 
 	$renderer =& $form->defaultRenderer();
-	$renderer->setHeaderTemplate("\n\t<tr>\n\t\t<td style=\"white-space: nowrap; height: 20px; vertical-align: middle; background-color: #336699; background-image: url('images/header-blue.png'); background-repeat: repeat-x; color: #FFFFFF; font-weight: normal; text-align: center;\" align=\"left\" valign=\"baseline\" colspan=\"2\">{header}</td>\n\t</tr>");
+	$renderer->setHeaderTemplate("\n\t<tr>\n\t\t<td style=\"white-space: nowrap; height: 20px; vertical-align: middle; background-color: #336699; background-repeat: repeat-x; color: #FFFFFF; font-weight: normal; text-align: center;\" align=\"left\" valign=\"baseline\" colspan=\"2\">{header}</td>\n\t</tr>");
 	$renderer->setElementTemplate("\n\t<tr>\n\t\t<td align=\"right\" valign=\"baseline\"><!-- BEGIN required --><span style=\"color: #ff0000\">*</span><!-- END required -->{label}</td>\n\t\t<td valign=\"baseline\" align=\"left\"><!-- BEGIN error --><span style=\"color: #ff0000\">{error}</span><br /><!-- END error -->\t{element}</td>\n\t</tr>");
 		$form->accept($renderer);
 		print($renderer->toHtml());
